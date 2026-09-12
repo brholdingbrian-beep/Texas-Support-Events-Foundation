@@ -37,11 +37,12 @@ export default function App() {
       <a className="skip-link" href="#main">
         Skip to content
       </a>
-      <div className="staging-banner">
-        Staging preview — not a public site. No production domain. Card giving is
-        not live.
+      <div className="chrome">
+        <div className="staging-banner">
+          Staging — not a public site. Card giving is not live.
+        </div>
+        <Header />
       </div>
-      <Header />
       <main id="main">
         <section className="hero" id="top">
           <div className="wrap">

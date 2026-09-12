@@ -10,7 +10,7 @@
   --accent: #e63427;
   --accent-hover: #c92b20;
   --header-h: 64px;
-  --staging-h: 36px;
+  --staging-h: 40px;
   --max: 1180px;
   --font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + var(--staging-h) + 24px);
 }
 
 body {
@@ -69,24 +70,24 @@ button {
   margin-inline: auto;
 }
 
-.staging-banner {
+.chrome {
   position: sticky;
   top: 0;
   z-index: 40;
+}
+
+.staging-banner {
   background: #1a1a1a;
   color: #f3eee6;
   font-size: 11px;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-align: center;
-  padding: 9px 16px;
+  padding: 8px 16px;
   border-bottom: 1px solid #333;
 }
 
 .site-header {
-  position: sticky;
-  top: var(--staging-h);
-  z-index: 30;
   background: #111;
   color: #fff;
   border-bottom: 3px solid var(--accent);
@@ -201,7 +202,7 @@ button {
 
 .section {
   padding: 88px 0;
-  scroll-margin-top: calc(var(--header-h) + var(--staging-h) + 12px);
+  scroll-margin-top: calc(var(--header-h) + var(--staging-h) + 24px);
 }
 
 .hero {
@@ -855,6 +856,12 @@ button {
 
   .cta-row .btn {
     width: 100%;
+  }
+
+  .staging-banner {
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    padding: 7px 12px;
   }
 }
 
