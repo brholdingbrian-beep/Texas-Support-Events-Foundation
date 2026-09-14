@@ -7,9 +7,9 @@
   --muted: #6a6a6a;
   --rule: #e4e1da;
   --rule-strong: #111111;
-  --accent: #e63427;
-  --accent-hover: #c92b20;
-  --header-h: 64px;
+  --accent: #e85c04;
+  --accent-hover: #c94e03;
+  --header-h: 72px;
   --staging-h: 40px;
   --max: 1180px;
   --font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -88,8 +88,8 @@ button {
 }
 
 .site-header {
-  background: #111;
-  color: #fff;
+  background: #ffffff;
+  color: var(--ink);
   border-bottom: 3px solid var(--accent);
   min-height: var(--header-h);
 }
@@ -107,23 +107,19 @@ button {
 
 .brand {
   text-decoration: none;
-  color: #fff;
+  color: var(--ink);
   display: flex;
-  flex-direction: column;
-  line-height: 1.15;
+  align-items: center;
+  min-width: 0;
 }
 
-.brand-name {
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-}
-
-.brand-sub {
-  font-size: 9px;
-  letter-spacing: 0.18em;
-  color: #cfcfcf;
-  font-weight: 600;
+.brand-logo {
+  display: block;
+  height: 46px;
+  width: auto;
+  max-width: min(420px, 58vw);
+  object-fit: contain;
+  object-position: left center;
 }
 
 .nav {
@@ -133,7 +129,7 @@ button {
 }
 
 .nav a {
-  color: #fff;
+  color: var(--ink);
   text-decoration: none;
   font-size: 11px;
   font-weight: 600;
@@ -142,14 +138,14 @@ button {
 
 .nav a:hover,
 .nav a:focus-visible {
-  color: #ffd4cf;
+  color: var(--accent);
 }
 
 .menu-toggle {
   display: none;
   background: transparent;
-  border: 1px solid #444;
-  color: #fff;
+  border: 1px solid #ccc;
+  color: var(--ink);
   padding: 8px 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -289,6 +285,18 @@ button {
   color: var(--ink-soft);
   font-size: 16px;
   max-width: 42ch;
+}
+
+.reg-status {
+  display: inline-block;
+  margin: 0 0 16px;
+  padding: 6px 10px;
+  border: 1.5px solid var(--ink);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink) !important;
 }
 
 .meta-grid {
@@ -746,6 +754,20 @@ button {
   align-items: start;
 }
 
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-badge {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 50%;
+}
+
 .footer-name {
   font-size: 12px;
   font-weight: 800;
@@ -828,12 +850,17 @@ button {
     left: 0;
     right: 0;
     top: 100%;
-    background: #111;
+    background: #fff;
     flex-direction: column;
     align-items: flex-start;
     padding: 16px 20px 22px;
     gap: 16px;
     border-bottom: 3px solid var(--accent);
+    box-shadow: 0 12px 24px rgba(17, 17, 17, 0.08);
+  }
+
+  .brand-logo {
+    height: 36px;
   }
 
   .nav.open {

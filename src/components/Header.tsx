@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ORG, assets } from "../site";
 
 const nav: { href: string; label: string; cta?: boolean }[] = [
   { href: "#range-day", label: "Range Day" },
@@ -16,8 +17,13 @@ export default function Header() {
     <header className="site-header">
       <div className="header-inner">
         <a className="brand" href="#top" onClick={close}>
-          <span className="brand-name">Texas Support Events</span>
-          <span className="brand-sub">Foundation · Austin, TX</span>
+          <img
+            className="brand-logo"
+            src={assets.wordmark}
+            alt={ORG.name}
+            width={420}
+            height={96}
+          />
         </a>
         <button
           className="menu-toggle"

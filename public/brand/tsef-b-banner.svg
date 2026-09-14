@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Texas Support Events Foundation">
+  <title>Texas Support Events Foundation</title>
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <g transform="translate(80,168)">
+    <g fill="#111111">
+      <!-- T -->
+      <rect x="0" y="0" width="268" height="46"/>
+      <rect x="0" y="0" width="46" height="128"/>
+      <!-- S -->
+      <path d="M58 124c0-26 18-40 54-40 22 0 40 9 50 22l-24 18c-7-9-16-14-26-14-16 0-22 7-22 14 0 9 7 12 27 16 32 7 51 18 51 44 0 30-22 44-58 44-28 0-47-11-60-27l24-18c9 11 20 18 36 18 18 0 26-7 26-16 0-9-8-13-28-18-34-7-50-20-50-43z"/>
+    </g>
+    <g fill="#E85C04">
+      <!-- E (banner lockup uses orange E) -->
+      <path d="M172 52h96v32h-56v12h50v28h-50v12h58v32h-98z"/>
+    </g>
+    <g fill="#111111">
+      <!-- F -->
+      <rect x="0" y="140" width="268" height="46"/>
+      <rect x="0" y="140" width="46" height="108"/>
+      <rect x="46" y="194" width="118" height="36"/>
+    </g>
+    <g font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900">
+      <text x="308" y="168" font-size="128" fill="#111111" letter-spacing="2">TEXAS</text>
+      <text x="312" y="230" font-size="28" fill="#E85C04" letter-spacing="3.2">SUPPORT EVENTS FOUNDATION</text>
+    </g>
+    <rect x="312" y="248" width="720" height="3" fill="#111111"/>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 import EventFlyer from "./components/EventFlyer";
 import Header from "./components/Header";
-import { CONTACT_EMAIL, ORG, links } from "./site";
+import { CONTACT_LABEL, ORG, assets, links } from "./site";
 
 const work = [
   {
@@ -91,6 +91,9 @@ export default function App() {
                   <br />
                   <span className="accent-line">Range Day</span>
                 </h3>
+                <p className="reg-status" role="status">
+                  Registration open — reserve by email
+                </p>
                 <p>
                   Veterans, first responders, construction, and allies — one day
                   on the range for the men and women who serve.
@@ -276,7 +279,7 @@ export default function App() {
                 <div className="legal-item">
                   <dt>Contact</dt>
                   <dd>
-                    <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+                    <a href={links.give}>{CONTACT_LABEL}</a>
                   </dd>
                 </div>
               </dl>
@@ -293,14 +296,23 @@ export default function App() {
       </main>
       <footer className="site-footer">
         <div className="wrap footer-grid">
-          <div>
-            <p className="footer-name">{ORG.name}</p>
-            <p className="footer-copy">{ORG.tagline}</p>
-            <p className="footer-copy">{ORG.city}</p>
+          <div className="footer-brand">
+            <img
+              className="footer-badge"
+              src={assets.badge}
+              alt=""
+              width={72}
+              height={72}
+            />
+            <div>
+              <p className="footer-name">{ORG.name}</p>
+              <p className="footer-copy">{ORG.tagline}</p>
+              <p className="footer-copy">{ORG.city}</p>
+            </div>
           </div>
           <div>
             <span className="footer-label">Contact</span>
-            <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+            <a href={links.give}>{CONTACT_LABEL}</a>
           </div>
           <div>
             <span className="footer-label">Nonprofit</span>

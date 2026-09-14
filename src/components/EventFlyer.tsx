@@ -1,4 +1,3 @@
-import { CONTACT_EMAIL } from "../site";
 import Seal from "./Seal";
 
 export default function EventFlyer() {
@@ -80,7 +79,7 @@ export default function EventFlyer() {
           <div>
             Sponsorships & team registration
             <br />
-            {CONTACT_EMAIL}
+            Reserve by email
           </div>
           <div>
             Top Shot Texas
