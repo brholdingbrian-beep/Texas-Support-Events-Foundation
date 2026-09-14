@@ -1,0 +1,3 @@
+# Soft-launch / staging — do not index. Remove only after Brian OKs a public launch.
+User-agent: *
+Disallow: /
