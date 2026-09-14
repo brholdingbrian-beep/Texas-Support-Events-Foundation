@@ -90,14 +90,22 @@ When Brian is ready:
 
 ## Brand assets
 
-Approved lockups live in `public/brand/`:
+**Current `public/brand/` PNGs are still traces**, not the official binaries. Re-attached files did not persist on disk in this environment.
 
-- `tsef-logo-official.png` / `.svg` — primary wordmark (header)
-- `tsef-b-transparent.png` — same lockup, transparent ground
-- `tsef-b-badge-only.png` / `tsef-b-badge.svg` — square/circle mark (footer, favicon)
-- `tsef-b-banner.png` — OG / Twitter share image (also at `/tsef-b-banner.png`)
+Site paths once official files are installed:
 
-Regenerate rasters with `python3 scripts/build-brand-assets.py` (uses Archivo Black / OFL in `scripts/fonts/`).
+- `public/brand/tsef-logo-official.png` — primary wordmark (header)
+- `public/brand/tsef-b-transparent.png`
+- `public/brand/tsef-b-badge-only.png` — square/circle mark (footer, favicon)
+- `public/tsef-b-banner.png` — OG / Twitter share image
+
+If the four official PNGs are on disk in `br-holding-brand-assets/`, install them with:
+
+```bash
+bash scripts/install-official-assets.sh
+```
+
+That copies the binaries into `public/brand/` and `/tsef-b-banner.png`, and rebuilds favicon / apple-touch from the badge. Do not run `scripts/build-brand-assets.py` over official files — that script only rebuilds traces.
 
 ## Repo notes
 
